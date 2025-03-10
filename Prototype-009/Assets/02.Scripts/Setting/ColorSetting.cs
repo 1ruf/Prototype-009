@@ -35,7 +35,7 @@ public class ColorSetting : MonoBehaviour
 
     public void Apply()
     {
-        _color = _CsSO.BackgroundColor;
+        _CsSO.BackgroundColor = _color;
         OnSettingApply?.Invoke();
     }
 }
