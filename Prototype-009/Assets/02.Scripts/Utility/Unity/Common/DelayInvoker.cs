@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace GyeolUtility.Untiy.UI
+namespace GyeolUtility
 {
     public class DelayInvoker<T>
     {
