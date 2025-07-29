@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Utility.Unity.Common
+namespace Utility.Unity.Common.ObjectPool
 {
-    public class PoolManager
+    public interface IPoolable
     {
+        void Create();
+        void Destroy();
     }
 }
