@@ -3,11 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Utility.Unity.Media.Audio
 {
-    public class SoundManager
+    public class SoundManager : MonoBehaviour
     {
+        public static SoundManager Instance { get; private set; }
+
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                Destroy(this);
+                return;
+            }
+
+            Instance = this;
+        }
+
 
     }
 }

@@ -13,7 +13,7 @@ namespace Utility.Unity.Common.ObjectPool
         {
             if (Instance != null)
             {
-                Destroy(gameObject);
+                Destroy(this);
                 return;
             }
 
