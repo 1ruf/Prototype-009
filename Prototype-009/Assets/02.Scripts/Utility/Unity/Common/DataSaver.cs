@@ -89,7 +89,6 @@ namespace Utility.Unity.Common
             ICryptoTransform ct = rm.CreateEncryptor();
             byte[] results = ct.TransformFinalBlock(bytes, 0, bytes.Length);
             return System.Convert.ToBase64String(results, 0, results.Length);
-
         }
         private static string Decrypt(string data)
         {
