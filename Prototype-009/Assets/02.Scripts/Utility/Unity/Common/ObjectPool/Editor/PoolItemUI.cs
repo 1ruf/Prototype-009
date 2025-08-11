@@ -1,8 +1,8 @@
 using System;
-using GondrLib.ObjectPool.Runtime;
+using Utility.ObjectPool.Runtime;
 using UnityEngine.UIElements;
 
-namespace GondrLib.ObjectPool.Editor
+namespace Utility.ObjectPool.Editor
 {
     public class PoolItemUI
     {

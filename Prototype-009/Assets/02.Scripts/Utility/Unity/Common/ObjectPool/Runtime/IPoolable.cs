@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GondrLib.ObjectPool.Runtime
+namespace Utility.ObjectPool.Runtime
 {
     public interface IPoolable
     {

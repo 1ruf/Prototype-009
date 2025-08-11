@@ -2,9 +2,11 @@
     "name": "ObjectPoolAssembly",
     "rootNamespace": "",
     "references": [
-        "GUID:ac8d7cb8707516d4da77ccb669517912"
+        "DIAssembly"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

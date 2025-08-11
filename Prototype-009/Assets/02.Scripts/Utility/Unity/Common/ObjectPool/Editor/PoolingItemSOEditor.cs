@@ -1,10 +1,10 @@
 using System.IO;
-using GondrLib.ObjectPool.Runtime;
+using Utility.ObjectPool.Runtime;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace GondrLib.ObjectPool.Editor
+namespace Utility.ObjectPool.Editor
 {
     [CustomEditor(typeof(PoolingItemSO))]
     public class PoolingItemSOEditor : UnityEditor.Editor

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GondrLib.ObjectPool.Runtime
+namespace Utility.ObjectPool.Runtime
 {
     [CreateAssetMenu(fileName = "PoolingItem", menuName = "SO/Pool/Item", order = 0)]
     public class PoolingItemSO : ScriptableObject

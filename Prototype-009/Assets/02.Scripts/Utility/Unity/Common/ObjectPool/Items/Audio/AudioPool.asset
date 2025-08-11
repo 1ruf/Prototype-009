@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef599dc11424d73bb92c3df252debb4, type: 3}
-  m_Name: PoolManager
+  m_Script: {fileID: 11500000, guid: c3a4afc4c03a454f9c1df9a315b2b0bb, type: 3}
+  m_Name: AudioPool
   m_EditorClassIdentifier: 
-  itemList:
-  - {fileID: 11400000, guid: b9c9a8228fc84ce4c9e18917dd5674df, type: 2}
+  poolingName: AudioPool
+  prefab: {fileID: 2837836059364863449, guid: 067756b067e7eb54ea93e301423c9b73, type: 3}
+  initCount: 5

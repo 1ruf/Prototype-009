@@ -1,7 +1,7 @@
-using GondrLib.Dependencies;
+using Utility.Dependencies;
 using UnityEngine;
 
-namespace GondrLib.ObjectPool.Runtime
+namespace Utility.ObjectPool.Runtime
 {
     [Provide]
     public class PoolManagerMono : MonoBehaviour, IDependencyProvider

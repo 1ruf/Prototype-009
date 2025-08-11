@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GondrLib.ObjectPool.Runtime
+namespace Utility.ObjectPool.Runtime
 {
     public class Pool
     {

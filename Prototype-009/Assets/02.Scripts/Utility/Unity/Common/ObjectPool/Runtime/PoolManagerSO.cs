@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GondrLib.ObjectPool.Runtime
+namespace Utility.ObjectPool.Runtime
 {
     [CreateAssetMenu(fileName = "PoolManager", menuName = "SO/Pool/Manager", order = 0)]
     public class PoolManagerSO : ScriptableObject

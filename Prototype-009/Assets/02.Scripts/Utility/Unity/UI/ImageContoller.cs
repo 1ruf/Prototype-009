@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,7 +24,6 @@ namespace Utility.Unity.UI
         }
 
         public void RemoveAll() => panels.Clear();
-
 
         public void OpenAll() => panels.ForEach(img => Open(img));
         public Image Open(Image target)

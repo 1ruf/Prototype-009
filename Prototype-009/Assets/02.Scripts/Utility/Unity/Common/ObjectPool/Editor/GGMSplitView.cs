@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace GondrLib.ObjectPool.Editor
+namespace Utility.ObjectPool.Editor
 {
     [UxmlElement]
     public partial class GGMSplitView : TwoPaneSplitView

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-namespace GondrLib.Dependencies
+namespace Utility.Dependencies
 {
     [DefaultExecutionOrder(-10)] //0이 일반 스크립트
     public class Injector : MonoBehaviour
