@@ -33,5 +33,10 @@ namespace Utility.Unity.Media.Audio
 
             return sound;
         }
+
+        public void RemoveSound(Sound target)
+        {
+            target.Remove();
+        }
     }
 }

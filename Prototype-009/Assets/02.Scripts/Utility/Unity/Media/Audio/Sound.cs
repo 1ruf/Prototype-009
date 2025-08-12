@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
-using Utility.ObjectPool.Editor;
 using Utility.ObjectPool.Runtime;
 
 namespace Utility.Unity.Media.Audio
@@ -20,7 +19,7 @@ namespace Utility.Unity.Media.Audio
         public PoolingItemSO PoolingType => _poolItemSO;
         public GameObject GameObject => gameObject;
 
-        public void InitSound(AudioSource source, AudioMixer mixer,PoolingItemSO poolItemSO)
+        public void InitSound(AudioSource source, AudioMixer mixer, PoolingItemSO poolItemSO)
         {
             this._source = source;
             this._mixer = mixer;
