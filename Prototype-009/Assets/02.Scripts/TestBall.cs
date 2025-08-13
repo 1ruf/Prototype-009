@@ -1,12 +1,30 @@
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using Utility.Unity.Common;
 
 public class TestBall : MonoBehaviour
 {
-    [SerializeField] private float power;
+    SaveData saveData = new SaveData() { Name = "Test", value = 10 };
     private void Start()
     {
-        GetComponent<Rigidbody2D>().AddForce(power * Randoms.RandomLinnerVector3(new Vector3(-1f,-1f,0),new Vector3(1f,1f,0)));
+        DataSaver.Save(saveData);
     }
+
+    private void Update()
+    {
+        if (Keyboard.current.lKey.wasPressedThisFrame)
+        {
+            SaveData data = DataSaver.Load();
+            print($"데이터로드 - {data.Name} : {data.value}");
+        }
+        if (Keyboard.current.aKey.wasPressedThisFrame)
+        {
+            saveData.value++;
+            DataSaver.Save(saveData);
+        }
+    }
+
 }

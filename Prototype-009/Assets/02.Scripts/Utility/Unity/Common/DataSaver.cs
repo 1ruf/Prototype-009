@@ -12,7 +12,7 @@ namespace Utility.Unity.Common
     }
     public class DataSaver
     {
-        private static readonly string _privateKey = "B2yG7UoXxL16lwlcmIPJiJeb3tC25WP8";
+        private static readonly string _privateKey = "B2yG7UoXxL16lwlcmIPJiJeb3tC25WP8";//프로젝트마다 변환 권1장
         public static void Save(SaveData data)
         {
             SaveData saveData = data;
@@ -23,6 +23,7 @@ namespace Utility.Unity.Common
 
             string jsonString = DataToJson(saveData);
             string encryptString = Encrypt(jsonString);
+            SaveFile(encryptString);
         }
         public static SaveData Load()
         {
