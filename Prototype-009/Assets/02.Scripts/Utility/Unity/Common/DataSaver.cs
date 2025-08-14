@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
+﻿using System.IO;
 using System.Security.Cryptography;
+using UnityEngine;
 
 namespace Utility.Unity.Common
 {

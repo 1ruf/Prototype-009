@@ -21,7 +21,7 @@ namespace Utility.Unity.Media.Audio
             Instance = this;
         }
 
-        public Sound MakeSound(AudioSource source,AudioMixer mixer,float volume = 0f,bool threeDementionMode = false)
+        public Sound MakeSound(AudioSource source, AudioMixer mixer, float volume = 0f, bool threeDementionMode = false)
         {
             Sound sound = audioPool.Pop<Sound>(_audioPoolType);
             GameObject soundObj = sound.GameObject;
