@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using Utility.Unity.Common;
+using KoUtility.Unity.Common;
 
 public class TestBall : MonoBehaviour
 {
