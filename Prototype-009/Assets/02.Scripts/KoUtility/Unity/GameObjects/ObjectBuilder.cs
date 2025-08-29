@@ -40,7 +40,7 @@ namespace KoUtility.Unity.GameObjects
         private PoolManagerMono _poolManager;
         private PoolingItemSO _poolItem;
 
-        private Stack<CreatedObject> _createdObject;
+        private Stack<CreatedObject> _createdObject = new();
 
         public ObjectBuilder(PoolManagerMono poolM)
         {
@@ -77,7 +77,7 @@ namespace KoUtility.Unity.GameObjects
         {
             CreatedObject obj = _poolManager.Pop<CreatedObject>(_poolItem);
             obj.SetObject(_objectData);
-            obj.Initialize(_buildData, _poolItem);
+            obj.Initialize(_objectData,_buildData, _poolItem);
 
             return obj;
         }

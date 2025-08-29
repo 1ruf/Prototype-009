@@ -8,13 +8,13 @@ namespace KoUtility.Unity.GameObjects.Pools
     [RequireComponent(typeof(MeshRenderer))]
     public class CreatedObject : MonoBehaviour, IPoolable
     {
+        [SerializeField] private PoolingItemSO _poolType;
         [SerializeField] private float destroyYPosition = -50f;
 
         private ObjectBuildData _buildData;
         private ObjectData _objectData;
 
         private Material _material;
-        private PoolingItemSO _poolType;
         private MeshRenderer _meshRenderer;
         private Pool _currentPool;
 
@@ -32,9 +32,11 @@ namespace KoUtility.Unity.GameObjects.Pools
             _meshRenderer = GetComponent<MeshRenderer>();
         }
 
-        public void Initialize(ObjectBuildData buildData, PoolingItemSO poolType)
+        public void Initialize(ObjectData objData,ObjectBuildData buildData, PoolingItemSO poolType)
         {
             _poolType = poolType;
+            _objectData = objData;
+            _buildData = buildData;
         }
 
         public void Action()
